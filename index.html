@@ -19,7 +19,7 @@
      <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 <script>
 (function(){
-  emailjs.init(LjCt_EbS2KF4Z5XxH);
+  emailjs.init("LjCt_EbS2KF4Z5XxH");
 })();
 </script>
 
@@ -317,7 +317,7 @@
 document.getElementById("contact-form").addEventListener("submit", function(event) {
   event.preventDefault();
 
-  emailjs.sendForm(service_b4cbz89, template_cts04is, this)
+  emailjs.sendForm("service_b4cbz89", "template_cts04is", this)
     .then(function() {
       alert("Message sent successfully!");
       document.getElementById("contact-form").reset();
